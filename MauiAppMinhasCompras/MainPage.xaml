@@ -34,3 +34,7 @@
     </ScrollView>
 
 </ContentPage>
+
+<!-- CollectionView - Mostra lista de produtos com cards bonitos -->
+<!-- DataTemplate = Layout de cada item da lista -->
+<!-- SEARCHBAR DINÂMICO - Filtra produtos em tempo real conforme usuário digita -->
