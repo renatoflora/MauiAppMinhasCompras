@@ -1,4 +1,4 @@
-using MauiAppMinhasCompras.Models;
+ï»¿using MauiAppMinhasCompras.Models;
 using System.Collections.ObjectModel;
 
 namespace MauiAppMinhasCompras.Views;
@@ -65,20 +65,21 @@ public partial class ListaProduto : ContentPage
     {
         double soma = lista.Sum(i => i.Total);
 
-        string msg = $"O total é {soma:C}";
+        string msg = $"O total ï¿½ {soma:C}";
 
         DisplayAlert("Total dos Produtos", msg, "OK");
     }
 
     private async void MenuItem_Clicked(object sender, EventArgs e)
     {
-        try 
+        try
         {
             MenuItem selecinado = sender as MenuItem;
 
             Produto p = selecinado.BindingContext as Produto;
 
-            bool confirm = await DisplayAlert("Tem Certeza?", $"Remover {p.Descricao}?", "Sim", "Não");
+            bool confirm = await DisplayAlert(
+                "Tem Certeza?", $"Remover {p.Descricao}?", "Sim", "Nï¿½o");
 
             if (confirm)
             {

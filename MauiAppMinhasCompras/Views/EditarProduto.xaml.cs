@@ -33,3 +33,10 @@ public partial class EditarProduto : ContentPage
         }
     }
 }
+// o app está buscando, listando, somando, alterando e adicionando novos registros. 
+//o layout ainda está cru. 
+//Try e Catch para tratar erros e evitar que o app trave.
+//listView para exibir os produtos cadastrados.
+//ContextAction para excluir um produto da lista.
+//OnAppearing para atualizar a lista de produtos toda vez que a página for exibida.
+
